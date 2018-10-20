@@ -121,7 +121,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         //标题label
         self.titleLabel = UILabel()
-        self.titleLabel.text = "zjfengs.com"
+        self.titleLabel.text = "登陆个人中心"
         self.titleLabel.textColor = UIColor.white
         self.titleLabel.font = UIFont.systemFont(ofSize: 36)
         self.view.addSubview(self.titleLabel)
@@ -130,6 +130,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             make.centerX.equalTo(self.view)
             make.height.equalTo(44)
         }
+        
+        
     }
     
     //输入框获取焦点开始编辑
