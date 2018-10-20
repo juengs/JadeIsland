@@ -28,7 +28,7 @@ class MyTabBarController: UITabBarController {
     
     /// 添加子控制器
     func addChildViewControllers() {
-        setChildViewController(HomeViewController(), title: "首页", imageName: "home_tabBar", selectedImageName: "home_tabBar_selected")
+        setChildViewController(LoginViewController(), title: "首页", imageName: "home_tabBar", selectedImageName: "home_tabBar_selected")
         setChildViewController(TradeViewController(), title: "投资", imageName: "financial_tabBar", selectedImageName: "financial_tabBar_selected")
         setChildViewController(VipViewController(), title: "会员", imageName: "more_tabBar", selectedImageName: "more_tabBar_selected")
         setChildViewController(MineViewController(), title: "我的", imageName: "mine_tabBar", selectedImageName: "mine_tabBar_selected")

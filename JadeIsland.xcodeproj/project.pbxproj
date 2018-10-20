@@ -27,6 +27,8 @@
 		9072CC13217B11AB00810BDC /* VipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9072CC11217B11AB00810BDC /* VipViewController.xib */; };
 		9072CC16217B11C800810BDC /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9072CC14217B11C800810BDC /* MineViewController.swift */; };
 		9072CC17217B11C800810BDC /* MineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9072CC15217B11C800810BDC /* MineViewController.xib */; };
+		90D8A081217B1F1A002DC22D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D8A080217B1F1A002DC22D /* LoginViewController.swift */; };
+		90D8A083217B4168002DC22D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D8A082217B4168002DC22D /* RegisterViewController.swift */; };
 		E669DA278E0C7255CF73C0F7 /* Pods_JadeIsland.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC8B1401385652BA94049CC /* Pods_JadeIsland.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,8 @@
 		9072CC14217B11C800810BDC /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		9072CC15217B11C800810BDC /* MineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MineViewController.xib; sourceTree = "<group>"; };
 		90D8A077217B1B18002DC22D /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		90D8A080217B1F1A002DC22D /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		90D8A082217B4168002DC22D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		946FBDE2FD7DD9EC248AC7B1 /* Pods_JadeIslandUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JadeIslandUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		966B7053E67B06F7BA83D696 /* Pods-JadeIsland.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JadeIsland.release.xcconfig"; path = "Pods/Target Support Files/Pods-JadeIsland/Pods-JadeIsland.release.xcconfig"; sourceTree = "<group>"; };
 		C3FA3FA43134F8DF80829E6A /* Pods-JadeIslandUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JadeIslandUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JadeIslandUITests/Pods-JadeIslandUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -392,6 +396,8 @@
 		9072CBEF217B08E400810BDC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				90D8A080217B1F1A002DC22D /* LoginViewController.swift */,
+				90D8A082217B4168002DC22D /* RegisterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -646,6 +652,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9072CC12217B11AB00810BDC /* VipViewController.swift in Sources */,
+				90D8A083217B4168002DC22D /* RegisterViewController.swift in Sources */,
 				9072CC0E217B118100810BDC /* TradeViewController.swift in Sources */,
 				9072CC16217B11C800810BDC /* MineViewController.swift in Sources */,
 				9072CBF2217B08E400810BDC /* HomeModel.swift in Sources */,
@@ -653,6 +660,7 @@
 				9072CC04217B104F00810BDC /* MyNavigationController.swift in Sources */,
 				9072CBA2217B068400810BDC /* AppDelegate.swift in Sources */,
 				9072CC05217B104F00810BDC /* MyTabBarController.swift in Sources */,
+				90D8A081217B1F1A002DC22D /* LoginViewController.swift in Sources */,
 				9072CC0A217B115100810BDC /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
