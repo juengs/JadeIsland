@@ -4,7 +4,7 @@
 //
 //  Created by Jeff on 2018/10/20.
 //  Copyright © 2018 jf. All rights reserved.
-//
+//  枚举注册控件,的用户输出校验结果 Model
 
 import UIKit
 
@@ -20,7 +20,7 @@ enum ValidationResult {
 extension ValidationResult {
     var isValid: Bool {
         switch self {
-        case .ok(message: "验证通过"):
+        case .ok: //非值绑定
             return true
         default:
             return false
@@ -29,16 +29,16 @@ extension ValidationResult {
 }
 
 //扩展ValidationResult，对应不同的验证结果返回不同的文字描述
-extension ValidationResult {
+extension ValidationResult: CustomStringConvertible {
     var description: String {
         switch self {
         case .validating:
             return "正在验证..."
         case .empty:
             return ""
-        case .ok(let message):
+        case let .ok(message):
             return message
-        case .failed(let message):
+        case let .failed(message):  //值绑定
             return message
         }
     }
@@ -52,11 +52,11 @@ extension ValidationResult {
             return UIColor.gray
         case .empty:
             return UIColor.black
-        case .ok( _):
-            return UIColor(red: 0/255, green: 130/255, blue: 0/255, alpha: 1) //RGB都需要除以255
-        case .failed( _):
+        case .ok:
+            return UIColor(red: 0/255, green: 130/255, blue: 0/255, alpha: 1)
+        case .failed:
             return UIColor.red
         }
-}
+    }
 }
 
