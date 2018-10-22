@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		12421307D5EFF7E4C606E5B0 /* Pods_JadeIslandUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946FBDE2FD7DD9EC248AC7B1 /* Pods_JadeIslandUITests.framework */; };
 		37E31589E04D539171435D2F /* Pods_JadeIslandTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 172B1EC54A4EB322E72F64B0 /* Pods_JadeIslandTests.framework */; };
+		901EC3FD217D4E72007230C2 /* SMSValidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EC3FC217D4E72007230C2 /* SMSValidViewController.swift */; };
+		901EC403217D4F8F007230C2 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901EC400217D4F8F007230C2 /* SMS_SDK.framework */; };
+		901EC404217D4F8F007230C2 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 901EC402217D4F8F007230C2 /* MOBFoundation.framework */; };
+		901EC406217D5039007230C2 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 901EC405217D5039007230C2 /* libc++.tbd */; };
+		901EC408217D5051007230C2 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 901EC407217D5051007230C2 /* libz.tbd */; };
+		901EC40B217D5148007230C2 /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 901EC40A217D5148007230C2 /* bridge.m */; };
+		901EC40F217D6632007230C2 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901EC40E217D6632007230C2 /* Const.swift */; };
 		9072CBA2217B068400810BDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9072CBA1217B068400810BDC /* AppDelegate.swift */; };
 		9072CBAA217B068400810BDC /* JadeIsland.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9072CBA8217B068400810BDC /* JadeIsland.xcdatamodeld */; };
 		9072CBAC217B068500810BDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9072CBAB217B068500810BDC /* Assets.xcassets */; };
@@ -60,6 +67,14 @@
 		76DB41A573F741F9D87AD7D7 /* Pods-JadeIslandUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JadeIslandUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JadeIslandUITests/Pods-JadeIslandUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		776A8A0646A54D30B097220B /* Pods-JadeIslandTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JadeIslandTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JadeIslandTests/Pods-JadeIslandTests.release.xcconfig"; sourceTree = "<group>"; };
 		8953577C52BA800D555BC9BB /* Pods-JadeIslandTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JadeIslandTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JadeIslandTests/Pods-JadeIslandTests.debug.xcconfig"; sourceTree = "<group>"; };
+		901EC3FC217D4E72007230C2 /* SMSValidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSValidViewController.swift; sourceTree = "<group>"; };
+		901EC400217D4F8F007230C2 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		901EC402217D4F8F007230C2 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		901EC405217D5039007230C2 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		901EC407217D5051007230C2 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		901EC409217D5147007230C2 /* JadeIsland-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JadeIsland-Bridging-Header.h"; sourceTree = "<group>"; };
+		901EC40A217D5148007230C2 /* bridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
+		901EC40E217D6632007230C2 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		9072CB9E217B068400810BDC /* JadeIsland.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JadeIsland.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9072CBA1217B068400810BDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9072CBA9217B068400810BDC /* JadeIsland.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JadeIsland.xcdatamodel; sourceTree = "<group>"; };
@@ -101,7 +116,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				901EC408217D5051007230C2 /* libz.tbd in Frameworks */,
+				901EC406217D5039007230C2 /* libc++.tbd in Frameworks */,
+				901EC404217D4F8F007230C2 /* MOBFoundation.framework in Frameworks */,
 				E669DA278E0C7255CF73C0F7 /* Pods_JadeIsland.framework in Frameworks */,
+				901EC403217D4F8F007230C2 /* SMS_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +146,8 @@
 		33FCAFADD2080556A82593B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				901EC407217D5051007230C2 /* libz.tbd */,
+				901EC405217D5039007230C2 /* libc++.tbd */,
 				3DC8B1401385652BA94049CC /* Pods_JadeIsland.framework */,
 				172B1EC54A4EB322E72F64B0 /* Pods_JadeIslandTests.framework */,
 				946FBDE2FD7DD9EC248AC7B1 /* Pods_JadeIslandUITests.framework */,
@@ -134,9 +155,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		901EC3FE217D4F8F007230C2 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				901EC3FF217D4F8F007230C2 /* SMSSDK */,
+				901EC401217D4F8F007230C2 /* Required */,
+			);
+			path = SDK;
+			sourceTree = "<group>";
+		};
+		901EC3FF217D4F8F007230C2 /* SMSSDK */ = {
+			isa = PBXGroup;
+			children = (
+				901EC400217D4F8F007230C2 /* SMS_SDK.framework */,
+			);
+			path = SMSSDK;
+			sourceTree = "<group>";
+		};
+		901EC401217D4F8F007230C2 /* Required */ = {
+			isa = PBXGroup;
+			children = (
+				901EC402217D4F8F007230C2 /* MOBFoundation.framework */,
+			);
+			path = Required;
+			sourceTree = "<group>";
+		};
 		9072CB95217B068400810BDC = {
 			isa = PBXGroup;
 			children = (
+				901EC3FE217D4F8F007230C2 /* SDK */,
 				9072CBA0217B068400810BDC /* JadeIsland */,
 				9072CBB8217B068500810BDC /* JadeIslandTests */,
 				9072CBC3217B068600810BDC /* JadeIslandUITests */,
@@ -164,7 +211,9 @@
 				9072CBAB217B068500810BDC /* Assets.xcassets */,
 				9072CBAD217B068500810BDC /* LaunchScreen.storyboard */,
 				9072CBB0217B068500810BDC /* Info.plist */,
+				901EC40A217D5148007230C2 /* bridge.m */,
 				9072CBA8217B068400810BDC /* JadeIsland.xcdatamodeld */,
+				901EC409217D5147007230C2 /* JadeIsland-Bridging-Header.h */,
 			);
 			path = JadeIsland;
 			sourceTree = "<group>";
@@ -340,6 +389,7 @@
 				9072CBEA217B08E400810BDC /* Extensions */,
 				9072CBEB217B08E400810BDC /* Controllers */,
 				9072CBEC217B08E400810BDC /* Views */,
+				901EC40E217D6632007230C2 /* Const.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -396,6 +446,7 @@
 		9072CBEF217B08E400810BDC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				901EC3FC217D4E72007230C2 /* SMSValidViewController.swift */,
 				90D8A080217B1F1A002DC22D /* LoginViewController.swift */,
 				90D8A082217B4168002DC22D /* RegisterViewController.swift */,
 			);
@@ -505,6 +556,7 @@
 				TargetAttributes = {
 					9072CB9D217B068400810BDC = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					9072CBB4217B068500810BDC = {
 						CreatedOnToolsVersion = 10.0;
@@ -660,6 +712,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9072CC12217B11AB00810BDC /* VipViewController.swift in Sources */,
+				901EC40B217D5148007230C2 /* bridge.m in Sources */,
 				90D8A087217B4778002DC22D /* ValidationResult.swift in Sources */,
 				90D8A083217B4168002DC22D /* RegisterViewController.swift in Sources */,
 				9072CC0E217B118100810BDC /* TradeViewController.swift in Sources */,
@@ -668,12 +721,14 @@
 				90D8A089217B4B21002DC22D /* GitHubSignupService.swift in Sources */,
 				90D8A08B217B568A002DC22D /* GitHubSignupViewModel.swift in Sources */,
 				9072CBAA217B068400810BDC /* JadeIsland.xcdatamodeld in Sources */,
+				901EC3FD217D4E72007230C2 /* SMSValidViewController.swift in Sources */,
 				9072CC04217B104F00810BDC /* MyNavigationController.swift in Sources */,
 				9072CBA2217B068400810BDC /* AppDelegate.swift in Sources */,
 				9072CC05217B104F00810BDC /* MyTabBarController.swift in Sources */,
 				90D8A081217B1F1A002DC22D /* LoginViewController.swift in Sources */,
 				9072CC0A217B115100810BDC /* HomeViewController.swift in Sources */,
 				90D8A085217B471B002DC22D /* GitHubNetworkService.swift in Sources */,
+				901EC40F217D6632007230C2 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -844,8 +899,14 @@
 			baseConfigurationReference = 0003B9F67289D1D92334841A /* Pods-JadeIsland.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5UE9J6587;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/SMSSDK",
+					"$(PROJECT_DIR)/SDK/Required",
+				);
 				INFOPLIST_FILE = JadeIsland/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -854,6 +915,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jf.JadeIsland;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JadeIsland/JadeIsland-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -864,8 +927,14 @@
 			baseConfigurationReference = 966B7053E67B06F7BA83D696 /* Pods-JadeIsland.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y5UE9J6587;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK/SMSSDK",
+					"$(PROJECT_DIR)/SDK/Required",
+				);
 				INFOPLIST_FILE = JadeIsland/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -874,6 +943,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jf.JadeIsland;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JadeIsland/JadeIsland-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

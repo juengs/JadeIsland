@@ -4,6 +4,12 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>MOBAppKey</key>
+	<string>285794a9f6ac8</string>
+	<key>MOBAppSecret</key>
+	<string>340989f575f3e428017e1f7c2e38680e</string>
 	<key>CFBundleDisplayName</key>
 	<string>蚂蚁理财</string>
 	<key>CFBundleExecutable</key>
