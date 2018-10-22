@@ -11,6 +11,8 @@ target 'JadeIsland' do
   pod 'SwiftyJSON'
   pod 'HandyJSON'
   pod 'Kingfisher'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   target 'JadeIslandTests' do
     inherit! :search_paths
