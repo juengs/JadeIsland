@@ -4,14 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
-	<key>MOBAppKey</key>
-	<string>285794a9f6ac8</string>
-	<key>MOBAppSecret</key>
-	<string>340989f575f3e428017e1f7c2e38680e</string>
 	<key>CFBundleDisplayName</key>
-	<string>蚂蚁理财</string>
+	<string>金股棒</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -26,8 +20,14 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MOBAppKey</key>
+	<string>285794a9f6ac8</string>
+	<key>MOBAppSecret</key>
+	<string>340989f575f3e428017e1f7c2e38680e</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>

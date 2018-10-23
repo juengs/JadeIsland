@@ -81,7 +81,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         //用户名输入框
         self.txtUser = UITextField()
         self.txtUser.delegate = self
-        self.txtUser.placeholder = "用户名"
+        self.txtUser.placeholder = "请输入您的手机号"
         self.txtUser.tag = 100
         self.txtUser.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
         self.txtUser.leftViewMode = UITextField.ViewMode.always
@@ -101,7 +101,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         
         // 用户名提示label
         userLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-        userLabel.font = UIFont(name: "Zapfino", size: 20)
+        userLabel.font = UIFont(name: "Zapfino", size: 15)
         userLabel.lineBreakMode = .byTruncatingTail  //隐藏尾部并显示省略号
         userLabel.lineBreakMode = .byTruncatingMiddle  //隐藏中间部分并显示省略号
         userLabel.lineBreakMode = .byTruncatingHead  //隐藏头部并显示省略号
@@ -115,7 +115,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         userLabel.snp.makeConstraints { (make) in
             make.left.equalTo(15)
             make.right.equalTo(-15)
-            make.height.equalTo(44)
+            make.height.equalTo(30)
             make.top.equalTo(txtUser.snp.bottom)
         }
         
@@ -133,7 +133,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         //密码输入框
         self.txtPwd = UITextField()
         self.txtPwd.delegate = self
-        self.txtPwd.placeholder = "密码"
+        self.txtPwd.placeholder = "请输入个人密码"
         self.txtPwd.tag = 101
         self.txtPwd.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
         self.txtPwd.leftViewMode = .always
@@ -154,7 +154,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         
         // 密码提示label
         passwordLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-        passwordLabel.font = UIFont(name: "Zapfino", size: 20)
+        passwordLabel.font = UIFont(name: "Zapfino", size: 15)
         passwordLabel.lineBreakMode = .byTruncatingTail  //隐藏尾部并显示省略号
         passwordLabel.lineBreakMode = .byTruncatingMiddle  //隐藏中间部分并显示省略号
         passwordLabel.lineBreakMode = .byTruncatingHead  //隐藏头部并显示省略号
@@ -168,7 +168,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         passwordLabel.snp.makeConstraints { (make) in
             make.left.equalTo(15)
             make.right.equalTo(-15)
-            make.height.equalTo(44)
+            make.height.equalTo(30)
             make.top.equalTo(txtPwd).offset(formViewHeight/6)
         }
         //分隔线2
@@ -186,7 +186,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         //再次输入密码输入框
         self.txtRepeatedPwd = UITextField()
         self.txtRepeatedPwd.delegate = self
-        self.txtRepeatedPwd.placeholder = "再次输入密码"
+        self.txtRepeatedPwd.placeholder = "请再次输入密码"
         self.txtRepeatedPwd.tag = 101
         self.txtRepeatedPwd.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
         self.txtRepeatedPwd.leftViewMode = .always
@@ -207,7 +207,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         
         // 重新输入密码提示label
         repeatedPwdLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-        repeatedPwdLabel.font = UIFont(name: "Zapfino", size: 20)
+        repeatedPwdLabel.font = UIFont(name: "Zapfino", size: 15)
         repeatedPwdLabel.lineBreakMode = .byTruncatingTail  //隐藏尾部并显示省略号
         repeatedPwdLabel.lineBreakMode = .byTruncatingMiddle  //隐藏中间部分并显示省略号
         repeatedPwdLabel.lineBreakMode = .byTruncatingHead  //隐藏头部并显示省略号
@@ -221,7 +221,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         repeatedPwdLabel.snp.makeConstraints { (make) in
             make.left.equalTo(15)
             make.right.equalTo(-15)
-            make.height.equalTo(44)
+            make.height.equalTo(30)
             make.top.equalTo(txtRepeatedPwd).offset(formViewHeight/6 - 1)
         }
         //注册按钮
@@ -333,10 +333,12 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     func showMessage(_ message: String) {
         let alertController = UIAlertController(title: nil,
                                                 message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "确定", style: .cancel, handler: nil)
+        let okAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        let loginAction = UIAlertAction(title: "登陆", style: .default, handler: { (action) in
+            self.navigationController?.show(VipViewController(), sender: nil)
+        })
         alertController.addAction(okAction)
+        alertController.addAction(loginAction)
         self.present(alertController, animated: true, completion: nil)
     }
-    
-    
 }

@@ -24,6 +24,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
        //视图背景色
         self.view.backgroundColor = UIColor(red: 1/255, green: 170/255, blue: 235/255, alpha: 1)
+        //导航条右边按钮
+        //navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .rewind, target: self, action: #selector(self.actionClick))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "注册", style: .plain, target: self, action: #selector(self.actionClick))
         
         //登录框高度
         let formViewHeight = 90
@@ -167,8 +170,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.topConstraint?.update(offset: 0)
             self.view.layoutIfNeeded()
         })
+        showMessage("登陆成功!")
     }
     
+    //注册按钮
+    //(导航条右侧)
+    @objc func actionClick() {
+        self.navigationController?.pushViewController(RegisterViewController(), animated: true)
+    }
+    
+    
 
+    //详细提示框
+    func showMessage(_ message: String) {
+        let alertController = UIAlertController(title: nil,
+                                                message: message, preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        let loginAction = UIAlertAction(title: "登陆", style: .default, handler: { (action) in
+            self.navigationController?.show(MineViewController(), sender: nil)
+        })
+        alertController.addAction(okAction)
+        alertController.addAction(loginAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
     
 }
